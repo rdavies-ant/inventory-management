@@ -6,6 +6,9 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    reports: 'レポート',
+    restocking: '補充',
+    backlog: 'バックログ',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -112,6 +115,9 @@ export default {
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
     quantity: '数量',
+    submittedOrders: '送信済み注文',
+    leadTime: 'リードタイム',
+    leadTimeDays: '{days}日',
     table: {
       orderNumber: '注文番号',
       orderId: '注文ID',
@@ -185,6 +191,86 @@ export default {
       change: '変化',
       trend: 'トレンド',
       period: '期間'
+    }
+  },
+
+  // Backlog
+  backlog: {
+    title: 'バックログ管理',
+    description: '在庫不足の追跡と解決',
+    loading: 'バックログを読み込み中...',
+    highPriority: '高優先度',
+    mediumPriority: '中優先度',
+    lowPriority: '低優先度',
+    totalBacklogItems: '総バックログ件数',
+    backlogItems: 'バックログ項目',
+    noBacklog: 'バックログ項目はありません - すべての注文を履行できます！',
+    unitsShort: '{count}単位不足',
+    days: '{count}日',
+    table: {
+      orderId: '注文ID',
+      sku: 'SKU',
+      itemName: '品目名',
+      quantityNeeded: '必要数量',
+      quantityAvailable: '在庫数量',
+      shortage: '不足',
+      daysDelayed: '遅延日数',
+      priority: '優先度'
+    }
+  },
+
+  // Reports
+  reports: {
+    title: 'パフォーマンスレポート',
+    description: '四半期パフォーマンス指標と月次トレンドを表示',
+    loading: 'レポートを読み込み中...',
+    quarterlyPerformance: '四半期パフォーマンス',
+    monthlyRevenueTrend: '月次収益トレンド',
+    monthOverMonth: '前月比分析',
+    noData: '選択したフィルターのレポートデータがありません。',
+    table: {
+      quarter: '四半期',
+      totalOrders: '総注文数',
+      totalRevenue: '総収益',
+      avgOrderValue: '平均注文額',
+      fulfillmentRate: '履行率',
+      month: '月',
+      orders: '注文数',
+      revenue: '収益',
+      change: '変化',
+      growthRate: '成長率'
+    },
+    summary: {
+      totalRevenueYTD: '総収益（年初来）',
+      avgMonthlyRevenue: '平均月次収益',
+      totalOrdersYTD: '総注文数（年初来）',
+      bestQuarter: '最高業績四半期'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充',
+    description: '需要予測に基づく予算ベースの補充提案',
+    budget: '利用可能予算',
+    recommendedItems: '推奨品目数',
+    selectedCost: '選択コスト',
+    remainingBudget: '残り予算',
+    recommendations: '推奨事項',
+    noRecommendations: '現在の予算とフィルターに対する補充提案はありません。',
+    partial: '一部',
+    placeOrder: '注文する',
+    placing: '注文中...',
+    orderPlaced: '注文 {orderNumber} を送信しました！',
+    leadTime: '推定配達リードタイム：{days}日',
+    table: {
+      item: '品目',
+      trend: 'トレンド',
+      currentDemand: '現在の需要',
+      forecastedDemand: '予測需要',
+      suggestedQty: '推奨数量',
+      unitCost: '単価',
+      subtotal: '小計'
     }
   },
 
